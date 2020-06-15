@@ -1,0 +1,15 @@
+{
+    "trigger": true,
+    "modules": [
+        "alter-claims"
+    ],
+    "parentResource": "larklitee3edaaa7e3edaaa7",
+    "functionName": "larklitee3edaaa7e3edaaa7PreTokenGeneration",
+    "resourceName": "larklitee3edaaa7e3edaaa7PreTokenGeneration",
+    "parentStack": "auth",
+    "triggerEnvs": [],
+    "triggerDir": "/Users/ben-yu/.config/yarn/global/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/PreTokenGeneration",
+    "triggerTemplate": "PreTokenGeneration.json.ejs",
+    "roleName": "larklitee3edaaa7e3edaaa7PreTokenGeneration",
+    "skipEdit": true
+}

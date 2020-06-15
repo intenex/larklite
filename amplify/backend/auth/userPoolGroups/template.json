@@ -1,0 +1,68 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": {
+        "authlarklitee3edaaa7e3edaaa7UserPoolId": {
+            "Type": "String",
+            "Default": "authlarklitee3edaaa7e3edaaa7UserPoolId"
+        },
+        
+        "authlarklitee3edaaa7e3edaaa7AppClientID": {
+            "Type": "String",
+            "Default": "authlarklitee3edaaa7e3edaaa7AppClientID"
+        },
+        "authlarklitee3edaaa7e3edaaa7AppClientIDWeb": {
+            "Type": "String",
+            "Default": "authlarklitee3edaaa7e3edaaa7AppClientIDWeb"
+        },
+        "AuthRoleArn": {
+            "Type": "String"
+        },
+        "UnauthRoleArn": {
+            "Type": "String"
+        },
+        "env": {
+            "Type": "String"
+        }
+    },
+    "Conditions": {
+        "ShouldNotCreateEnvResources": {
+            "Fn::Equals": [
+                {
+                    "Ref": "env"
+                },
+                "NONE"
+            ]
+        }
+    },
+    "Resources": {
+    
+        "AnthemGroup": {
+          "Type" : "AWS::Cognito::UserPoolGroup",
+          "Properties" : {
+              "GroupName" : "Anthem",
+              "Precedence" : 1,
+              
+              "UserPoolId" : {
+                "Ref": "authlarklitee3edaaa7e3edaaa7UserPoolId"
+              } 
+            }
+        },
+        
+    
+        "LarkGroup": {
+          "Type" : "AWS::Cognito::UserPoolGroup",
+          "Properties" : {
+              "GroupName" : "Lark",
+              "Precedence" : 2,
+              
+              "UserPoolId" : {
+                "Ref": "authlarklitee3edaaa7e3edaaa7UserPoolId"
+              } 
+            }
+        },
+        
+    
+    
+    },
+    
+}

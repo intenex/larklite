@@ -1,0 +1,16 @@
+{
+    "trigger": true,
+    "modules": [
+        "add-to-group"
+    ],
+    "parentResource": "larklitee3edaaa7e3edaaa7",
+    "functionName": "larklitee3edaaa7e3edaaa7PostConfirmation",
+    "resourceName": "larklitee3edaaa7e3edaaa7PostConfirmation",
+    "parentStack": "auth",
+    "triggerEnvs": [],
+    "triggerDir": "/Users/ben-yu/.config/yarn/global/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/PostConfirmation",
+    "triggerTemplate": "PostConfirmation.json.ejs",
+    "roleName": "larklitee3edaaa7e3edaaa7PostConfirmation",
+    "skipEdit": true,
+    "GROUP": "Lark"
+}

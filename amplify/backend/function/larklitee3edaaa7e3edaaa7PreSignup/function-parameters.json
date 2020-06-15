@@ -1,0 +1,16 @@
+{
+    "trigger": true,
+    "modules": [
+        "email-filter-blacklist"
+    ],
+    "parentResource": "larklitee3edaaa7e3edaaa7",
+    "functionName": "larklitee3edaaa7e3edaaa7PreSignup",
+    "resourceName": "larklitee3edaaa7e3edaaa7PreSignup",
+    "parentStack": "auth",
+    "triggerEnvs": [],
+    "triggerDir": "/Users/ben-yu/.config/yarn/global/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/PreSignup",
+    "triggerTemplate": "PreSignup.json.ejs",
+    "roleName": "larklitee3edaaa7e3edaaa7PreSignup",
+    "skipEdit": true,
+    "DOMAINBLACKLIST": "blacklist.com"
+}

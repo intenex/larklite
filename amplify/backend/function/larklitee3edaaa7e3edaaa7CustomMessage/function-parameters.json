@@ -1,0 +1,24 @@
+{
+    "trigger": true,
+    "modules": [
+        "verification-link"
+    ],
+    "parentResource": "larklitee3edaaa7e3edaaa7",
+    "functionName": "larklitee3edaaa7e3edaaa7CustomMessage",
+    "resourceName": "larklitee3edaaa7e3edaaa7CustomMessage",
+    "parentStack": "auth",
+    "triggerEnvs": [
+        {
+            "key": "RESOURCENAME",
+            "value": "resourceName"
+        }
+    ],
+    "triggerDir": "/Users/ben-yu/.config/yarn/global/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/CustomMessage",
+    "triggerTemplate": "CustomMessage.json.ejs",
+    "roleName": "larklitee3edaaa7e3edaaa7CustomMessage",
+    "skipEdit": true,
+    "REDIRECTURL": "exp://127.0.0.1:19000/",
+    "EMAILSUBJECT": "Please confirm your LarkLite account!",
+    "EMAILMESSAGE": "Please confirm your LarkLite account here!",
+    "RESOURCENAME": "resourceName"
+}
