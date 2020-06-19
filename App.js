@@ -7,9 +7,11 @@ import Amplify, { Auth } from 'aws-amplify';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
 import Todo from './Todo';
+import AmplifyAuthStorage from './AmplifyAuthStorage';
 
 import config from './aws-exports';
 Amplify.configure(config);
+Amplify.configure({storage: AmplifyAuthStorage});
 
 // const instructions = Platform.select({
 //   ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,

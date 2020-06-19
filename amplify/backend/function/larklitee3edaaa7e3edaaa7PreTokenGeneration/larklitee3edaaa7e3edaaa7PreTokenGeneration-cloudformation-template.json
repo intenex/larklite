@@ -95,7 +95,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-larklite-dev-223552-deployment",
-					"S3Key": "amplify-builds/larklitee3edaaa7e3edaaa7PreTokenGeneration-36476d41614f64424453-build.zip"
+					"S3Key": "amplify-builds/larklitee3edaaa7e3edaaa7PreTokenGeneration-5378594e497872653176-build.zip"
 				}
 			}
 		},

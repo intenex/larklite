@@ -17,15 +17,18 @@ const SignUp = ({navigation}) => {
         const { username, name, password, email, phone_number } = formState;
         try {
             const user = await Auth.signUp({
-                username,
+                username: username.toLowerCase(),
                 password,
                 attributes: {
                     name, 
-                    email,
+                    email: email.toLowerCase(),
                     phone_number
                 }
             });
             console.log({ user });
+            console.log(await Auth.currentAuthenticatedUser());
+            console.log(await Auth.currentUserInfo());
+            console.log(await Auth.currentCredentials());
         } catch (error) {
             console.log('error signing up:', error);
         }
