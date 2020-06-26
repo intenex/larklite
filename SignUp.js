@@ -26,9 +26,7 @@ const SignUp = ({navigation}) => {
                 }
             });
             console.log({ user });
-            console.log(await Auth.currentAuthenticatedUser());
-            console.log(await Auth.currentUserInfo());
-            console.log(await Auth.currentCredentials());
+            console.log(await Auth.currentSession());
         } catch (error) {
             console.log('error signing up:', error);
         }
